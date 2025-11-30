@@ -5,7 +5,8 @@ import App from './App';
 // Service Worker Registration
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
-    navigator.serviceWorker.register('/sw.js').then(registration => {
+    // Use relative path for SW to support subdirectories (GitHub Pages)
+    navigator.serviceWorker.register('./sw.js').then(registration => {
       console.log('SW registered: ', registration);
     }).catch(registrationError => {
       console.log('SW registration failed: ', registrationError);
