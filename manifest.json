@@ -1,0 +1,20 @@
+{
+  "short_name": "DoraTrip",
+  "name": "高雄5日4夜多啦A夢之旅",
+  "icons": [
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/6356/6356659.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "https://cdn-icons-png.flaticon.com/512/6356/6356659.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0096df",
+  "background_color": "#F0F8FF"
+}
