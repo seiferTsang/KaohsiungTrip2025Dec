@@ -21,10 +21,19 @@ export interface NoteData {
   timestamp: number;
 }
 
+export interface HourlyData {
+  time: string;      // HH:00
+  temp: number;
+  humidity: number;
+  rainChance: number;
+  weatherCode: number;
+}
+
 export interface WeatherData {
   temperatureMax: number;
   temperatureMin: number;
   weatherCode: number;
   sunrise: string;
   sunset: string;
+  hourly: HourlyData[];
 }

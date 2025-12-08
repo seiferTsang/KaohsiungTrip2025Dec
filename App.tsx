@@ -85,7 +85,10 @@ const App: React.FC = () => {
       {/* Main Content */}
       <main className="max-w-3xl mx-auto px-4 py-6">
         
-        <WeatherWidget />
+        <WeatherWidget 
+          selectedDate={currentSchedule.date} 
+          dayIndex={currentDayIndex} 
+        />
 
         <div className={`transition-opacity duration-200 ${isAnimating ? 'opacity-0' : 'opacity-100'}`}>
             <div className="flex items-center gap-2 mb-6">
